@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <style>
+    body{ text-align:center}
+        .div{ margin:0 auto; width:400px; height:500px; border:0px solid #F00;}
+        .p1{text-align: center; font-size: 24px;}
+        .set{width: 100px; height: 50px; font-size: 24px; -webkit-appearance:button;}
+    /* css注释：为了观察效果设置宽度 边框 高度等样式 */
+    </style>
+</head>
+<body>
+    <div class="div">
+        <form action="" method="post" name="login">
+            <br><br><br><br>
+            <h1>钻石珠宝检测结果查询网</h1>
+            <h1>用户登录</h1>
+            <p class="p1">&ensp;用户名:&ensp;
+                <input type="text" name="user_code" style="width:200px;height: 30px; font-size: 14px"
+                       onkeyup="value=value.replace(/[\W]/g,'') "
+                       onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                       placeholder="仅限于数字以及英文字符(1~20)"
+                       maxlength="20"
+                       required="required"
+                       {% if user_code == ' '  %}
+                         value=""
+                       {% else %}
+                         value = "{{ user_code }}"
+                       {% endif %}>
+            </p>
+            <p class="p1">&ensp;密&ensp;&ensp;码:&ensp;
+                <input type="password" name="password" style="width:200px;height: 30px; font-size: 14px"
+                       maxlength="16" required="required">
+            </p>
+            <br>
+            <p >
+                <input class="set" type="submit" name="login" value ="登录">
+                &ensp;&ensp;&ensp;&ensp;&ensp;
+                <input class="set" type="button" name="register" value="注册"
+                       onclick="window.open('{{url_for('register', user_code=' ', user_name=' ')}}')">
+            </p>
+        </form>
+        <br>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul class=flashes>
+                    {% for category, message in messages %}
+                        <li style="color: #FF0000">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        <p>
+            <a style="color: blue; text-decoration: underline" href="{{ url_for('change_password', user_code=' ', old_password=' ', new_password=' ', confirm_password=' ') }}" target="_blank">修改密码?</a>
+        </p>
+    </div>
+</body>
+</html>

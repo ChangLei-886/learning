@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>钻石珠宝检测结果查询网</title>
+</head>
+<body>
+    <p>钻石珠宝检测查询网
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {% if user %}
+            Welcome&nbsp;&nbsp;{{ user }}
+        {% else  %}
+
+        {% endif %}
+    </p>
+    {% block content %}{% endblock %}
+</body>
+</html>

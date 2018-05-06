@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>编号[{{ detection_number }}]详情</title>
+        <style>
+            th{text-align:center;background-color:#FFFFFF;height: 40px}
+            td{text-align:center;background-color:#FFFFFF;height: 25px}
+            table{background-color:darkgrey}
+        </style>
+    </head>
+    <body>
+            <p>
+                编号[{{ detection_number }}]详情查询：
+            </p>
+            <table width="500" border="0" id="myTable">
+                <tr>
+                    <th>序号</th>
+                    <th>检测项目</th>
+                    <th>内容</th>
+                </tr>
+
+                {% for k,v in record.items() %}
+                    <tr>
+                        <td> {{ loop.index }} </td>
+                        <td> {{ k }} </td>
+                        <td> {{ v }} </td>
+                    </tr>
+                {% endfor %}
+            </table>
+    </body>
+</html>
