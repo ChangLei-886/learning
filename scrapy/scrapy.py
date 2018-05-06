@@ -77,11 +77,13 @@ class DetectionInfoScrapy:
                             continue
                         # 要爬取的key
                         if p.b:
-                            detection_info['item_name'] = p.text.strip().replace('\r\n', '').replace(' ', '').replace('\n', '')
+                            detection_info['item_name'] = p.text.strip().replace('\r\n', '').replace(' ', '')\
+                                .replace('\n', '')
                             kv_flg = '1'
                         # 要爬取的value
                         if not p.b:
-                            detection_info['item_content'] = p.text.strip().replace('\r\n', '').replace(' ', '').replace('\n', '')
+                            detection_info['item_content'] = p.text.strip().replace('\r\n', '').replace(' ', '')\
+                                .replace('\n', '')
                             kv_flg = '2'
 
                         if kv_flg == '2':
