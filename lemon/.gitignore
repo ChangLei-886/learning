@@ -1,0 +1,77 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+*.map
+*.pem
+
+# Distribution / packaging
+.sass-cache
+.DS_Store
+.Python
+.idea/
+venv/
+env/
+build/
+node_modules/
+develop-eggs/
+dist/
+eggs/
+# lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+# Usually these files are written by a python script from a templates
+# before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+*.log.*
+.tmp
+# Sphinx documentation
+doc/_build/
+
+# PyBuilder
+target/
+
+dump.rdb
+config.codekit
+config.py
+create_tables.py
+
+# change port number freely
+runserver-local.py
+sql/alembic
+alembic.ini
+
+*.swp
+
+.sass-cache/
+sfc/baikal/static/
+.ropeproject
