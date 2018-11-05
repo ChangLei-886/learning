@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{name | default('123')}}</title>
+</head>
+<body>
+    {{content | e}}
+    {{value1 | float}}
+    {{value2 | upper}}
+    {% set var = 'abc' | upper %}
+    {% if var is upper %}
+        'UPPER'
+    {% else %}
+        'NOT UPPER'
+    {% endif%}
+
+    {% import 'macro.html' as macro %}
+    {% import 'macro2.html' as macro2 %}
+
+    <p>{{ macro.input1('username') }}</p>
+    <p>{{ macro2.input2('password', type='password') }}</p>
+
+    {% include 'test.html' %}
+
+</body>
+</html>

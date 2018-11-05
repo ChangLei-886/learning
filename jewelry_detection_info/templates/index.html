@@ -60,6 +60,9 @@
 {#            <a href = "javascript:void(0)" onclick = "closeDialog()">点这里关闭本窗口</a>#}
 {#        </div>#}
 {#        <div id="fade" class="black_overlay"></div>#}
+
+        {% from 'macro.html' import pagination_form_show %}
+        {{ pagination_form_show(current_page, max_page, 'index') }}
         <p>
             钻石珠宝检测项目查询：
         </p>

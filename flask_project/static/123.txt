@@ -1,0 +1,531 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" /><title>
+	广东省金银珠宝检测中心
+</title>
+    <style type="text/css">
+        a:hover
+        {
+            color: #C30;
+            text-decoration: underline;
+        }
+        .TABLE table th
+        {
+            border-spacing: 1px;
+        }
+        .TABLE table td
+        {
+            border-spacing: 1px;
+        }
+        /* Font Definitions */@font-face
+        {
+            font-family: 宋体;
+            panose-1: 2 1 6 0 3 1 1 1 1 1;
+            mso-font-alt: SimSun;
+            mso-font-charset: 134;
+            mso-generic-font-family: auto;
+            mso-font-pitch: variable;
+            mso-font-signature: 3 135135232 16 0 262145 0;
+        }
+        @font-face
+        {
+            font-family: 微软雅黑;
+            panose-1: 2 11 5 3 2 2 4 2 2 4;
+            mso-font-charset: 134;
+            mso-generic-font-family: swiss;
+            mso-font-pitch: variable;
+            mso-font-signature: -2147483001 437206098 16 0 262175 0;
+        }
+        @font-face
+        {
+            font-family: "\@微软雅黑";
+            panose-1: 2 11 5 3 2 2 4 2 2 4;
+            mso-font-charset: 134;
+            mso-generic-font-family: swiss;
+            mso-font-pitch: variable;
+            mso-font-signature: -2147483001 437206098 16 0 262175 0;
+        }
+        @font-face
+        {
+            font-family: "\@宋体";
+            panose-1: 2 1 6 0 3 1 1 1 1 1;
+            mso-font-charset: 134;
+            mso-generic-font-family: auto;
+            mso-font-pitch: variable;
+            mso-font-signature: 3 135135232 16 0 262145 0;
+        }
+        /* Style Definitions */p.MsoNormal, li.MsoNormal, div.MsoNormal
+        {
+            mso-style-parent: "";
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            mso-pagination: widow-orphan;
+            font-size: 12.0pt;
+            font-family: 宋体;
+            mso-bidi-font-family: 宋体;
+        }
+        a:link, span.MsoHyperlink
+        {
+            color: #CC3300;
+            mso-text-animation: none;
+            text-decoration: none;
+            text-underline: none;
+            text-decoration: none;
+            text-line-through: none;
+        }
+        a:visited, span.MsoHyperlinkFollowed
+        {
+            color: #CC3300;
+            mso-text-animation: none;
+            text-decoration: none;
+            text-underline: none;
+            text-decoration: none;
+            text-line-through: none;
+        }
+        p.nav, li.nav, div.nav
+        {
+            mso-style-name: nav;
+            mso-margin-top-alt: auto;
+            margin-right: 0cm;
+            mso-margin-bottom-alt: auto;
+            margin-left: 0cm;
+            mso-pagination: widow-orphan;
+            font-size: 12.0pt;
+            font-family: 宋体;
+            mso-bidi-font-family: 宋体;
+            color: #FF3300;
+        }
+        p.logo, li.logo, div.logo
+        {
+            mso-style-name: logo;
+            margin-top: 6.0pt;
+            margin-right: 0cm;
+            margin-bottom: 6.0pt;
+            margin-left: 0cm;
+            mso-pagination: widow-orphan;
+            font-size: 12.0pt;
+            font-family: 宋体;
+            mso-bidi-font-family: 宋体;
+        }
+        p.title, li.title, div.title
+        {
+            mso-style-name: title;
+            mso-margin-top-alt: auto;
+            margin-right: 0cm;
+            mso-margin-bottom-alt: auto;
+            margin-left: 0cm;
+            mso-pagination: widow-orphan;
+            font-size: 13.5pt;
+            font-family: 宋体;
+            mso-bidi-font-family: 宋体;
+            color: #333333;
+        }
+        p.close, li.close, div.close
+        {
+            mso-style-name: close;
+            margin-top: 6.0pt;
+            margin-right: 0cm;
+            margin-bottom: 6.0pt;
+            margin-left: 0cm;
+            text-align: center;
+            mso-pagination: widow-orphan;
+            font-size: 12.0pt;
+            font-family: 宋体;
+            mso-bidi-font-family: 宋体;
+        }
+        p.info, li.info, div.info
+        {
+            mso-style-name: info;
+            margin-top: 6.0pt;
+            margin-right: 0cm;
+            margin-bottom: 6.0pt;
+            margin-left: 0cm;
+            line-height: 15.0pt;
+            mso-pagination: widow-orphan;
+            font-size: 12.0pt;
+            font-family: 宋体;
+            mso-bidi-font-family: 宋体;
+        }
+        p.tj, li.tj, div.tj
+        {
+            mso-style-name: tj;
+            margin-top: 6.0pt;
+            margin-right: 0cm;
+            margin-bottom: 6.0pt;
+            margin-left: 0cm;
+            mso-pagination: widow-orphan;
+            font-size: 12.0pt;
+            font-family: 宋体;
+            mso-bidi-font-family: 宋体;
+        }
+        p.table, li.table, div.table
+        {
+            mso-style-name: table;
+            margin-top: 6.0pt;
+            margin-right: 0cm;
+            margin-bottom: 6.0pt;
+            margin-left: 0cm;
+            mso-pagination: widow-orphan;
+            font-size: 12.0pt;
+            font-family: 宋体;
+            mso-bidi-font-family: 宋体;
+        }
+        span.SpellE
+        {
+            mso-style-name: "";
+            mso-spl-e: yes;
+        }
+        @page Section1
+        {
+            size: 595.3pt 841.9pt;
+            margin: 72.0pt 233.25pt 72.0pt 90.0pt;
+            mso-header-margin: 42.55pt;
+            mso-footer-margin: 49.6pt;
+            mso-paper-source: 0;
+        }
+        div.Section1
+        {
+            page: Section1;
+        }
+        div.MsoNormal
+        {
+            mso-style-parent: "";
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            mso-pagination: widow-orphan;
+            font-size: 12.0pt;
+            font-family: 宋体;
+            mso-bidi-font-family: 宋体;
+        }
+        div.logo1
+        {
+            mso-style-name: logo;
+            margin-top: 6.0pt;
+            margin-right: 0cm;
+            margin-bottom: 6.0pt;
+            margin-left: 0cm;
+            text-align: justify;
+            text-justify: inter-ideograph;
+            mso-pagination: widow-orphan;
+            font-size: 12.0pt;
+            font-family: 宋体;
+            mso-bidi-font-family: 宋体;
+        }
+        li.MsoNormal
+        {
+            mso-style-parent: "";
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            mso-pagination: widow-orphan;
+            font-size: 12.0pt;
+            font-family: 宋体;
+            mso-bidi-font-family: 宋体;
+        }
+        li.logo1
+        {
+            mso-style-name: logo;
+            margin-top: 6.0pt;
+            margin-right: 0cm;
+            margin-bottom: 6.0pt;
+            margin-left: 0cm;
+            text-align: justify;
+            text-justify: inter-ideograph;
+            mso-pagination: widow-orphan;
+            font-size: 12.0pt;
+            font-family: 宋体;
+            mso-bidi-font-family: 宋体;
+        }
+        p.MsoNormal
+        {
+            mso-style-parent: "";
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            mso-pagination: widow-orphan;
+            font-size: 12.0pt;
+            font-family: 宋体;
+            mso-bidi-font-family: 宋体;
+        }
+        p.logo1
+        {
+            mso-style-name: logo;
+            margin-top: 6.0pt;
+            margin-right: 0cm;
+            margin-bottom: 6.0pt;
+            margin-left: 0cm;
+            text-align: justify;
+            text-justify: inter-ideograph;
+            mso-pagination: widow-orphan;
+            font-size: 12.0pt;
+            font-family: 宋体;
+            mso-bidi-font-family: 宋体;
+        }
+        span.SpellE1
+        {
+            mso-style-name: "";
+            mso-spl-e: yes;
+        }
+        span.title1
+        {
+            mso-style-name: title1;
+            mso-ansi-font-size: 13.5pt;
+            mso-bidi-font-size: 13.5pt;
+            color: #333333;
+        }
+        .MsoNormalTable tr td div .MsoNormalTable tr td .MsoNormal span
+        {
+            color: #000;
+        }
+    </style>
+</head>
+<body bgcolor="white" lang="ZH-CN" style='tab-interval: 21.0pt' leftmargin="0" topmargin="0">
+    <form name="form1" method="post" action="DiamondGrading.aspx?SampleNumber=66170118083" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNDUzMDM5NDM2D2QWAgIDD2QWGAIBDw8WAh4EVGV4dAULNjYxNzAxMTgwODNkZAIDDw8WAh8ABQoyMDQxNDUyMDA3ZGQCBQ8WAh4Dc3JjBVJTaG93U2FtcGxlUGljdHVyZS5hc3B4P0dlbUlkZW50aWZpY2F0aW9uS2V5SUQ9NjU1YmNiZTctMDRhMC00OTBlLTg2MjktZjZmZTU2ZTdjZWQ0ZAIHDw8WAh8ABQfpkrsg55+zZGQCCQ8PFgIfAAUHMC4wNjM2Z2RkAgsPDxYCHwAFBzAuMzE4Y3RkZAINDw8WAh8ABQnlnIbpkrvlnotkZAIPDw8WAh8ABQFIZGQCEQ8PFgIfAAUDVlZTZGQCEw8PFgIfAAUDLS0tZGQCFQ8PFgIfAAUDLS0tZGQCFw8PFgIfAAUk5bC65a+4OjQuNDYtNC40M8OXMi42N21t5YWr566t5YWr5b+DZGRkLu+44XD3VQULOmexzkl613egRD8=" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="19864F36" />
+</div>
+    <div class="Section1" style="text-align: center;">
+        <table border="0" cellpadding="0" cellspacing="0" width="350" style='width: 350;
+            border: #99BBE8 1px solid;'>
+            <tr>
+                <td style="border-bottom: #99BBE8 1px solid; height: 85px; text-align: center; vertical-align: middle;">
+                    <img id="Img1" src="Images/top.jpg" />
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom: #99BBE8 1px solid; height: 35px; text-align: center;">
+                    <span style='font-family: 微软雅黑; font-size: 20px;'>钻石分级证书查询结果</span>
+                </td>
+            </tr>
+            <tr style='mso-yfti-irow: 1'>
+                <td style='border-bottom: #99BBE8 1px solid;'>
+                    <div align="center">
+                        <table border="0" cellspacing="0" cellpadding="0" style="width: 100%; text-align: center;">
+                            <tr style='text-align: left;'>
+                                <td colspan="2" style="height: 5px;">
+                                </td>
+                            </tr>
+                            <tr style='mso-yfti-irow: 1; text-align: left;'>
+                                <td style='width: 50%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <b><span style='font-size: 10.5pt; font-family: 微软雅黑; color: black'>证书编号<span lang="EN-US">
+                                            Number</span></span></b></p>
+                                </td>
+                                <td style='width: 55%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <span lang="EN-US" style='font-size: 10.5pt; font-family: 微软雅黑; color: black'>
+                                            <span id="labSampleNumber">66170118083</span>
+                                        </span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr style='mso-yfti-irow: 2; text-align: left;'>
+                                <td style='width: 50%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <b><span style='font-size: 10.5pt; font-family: 微软雅黑; color: black'>识别码<span lang="EN-US">
+                                            code</span></span></b></p>
+                                </td>
+                                <td style='width: 55%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <span lang="EN-US" style='font-size: 10.5pt; font-family: 微软雅黑; color: black'>
+                                            <span id="labIdentifyCode">2041452007</span>
+                                        </span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr style='text-align: center;'>
+                                <td colspan="2" style='text-align: center;'>
+                                    <p align="center" class="MsoNormal">
+                                        <span lang="EN-US" style='font-size: 10.5pt; font-family: 微软雅黑; color: black; text-align: center;'>
+                                            <img src="ShowSamplePicture.aspx?GemIdentificationKeyID=655bcbe7-04a0-490e-8629-f6fe56e7ced4" id="imgShowImage" width="180" height="180" />
+                                        </span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr style='mso-yfti-irow: 3; text-align: left;'>
+                                <td style='width: 50%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <b><span style='font-size: 10.5pt; font-family: 微软雅黑; color: black'>检验结果<span lang="EN-US">
+                                            Result</span></span></b></p>
+                                </td>
+                                <td style='width: 55%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <span lang="EN-US" style='font-size: 10.5pt; font-family: 微软雅黑; color: black'>
+                                            <span id="labCertifyIdentifyResult">钻 石</span>
+                                        </span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr style='mso-yfti-irow: 4; text-align: left;'>
+                                <td style='width: 50%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <b><span style='font-size: 10.5pt; font-family: 微软雅黑; color: black'>总质量<span lang="EN-US">
+                                            Total Weight</span></span></b></p>
+                                </td>
+                                <td style='width: 55%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <span lang="EN-US" style='font-size: 10.5pt; font-family: 微软雅黑; color: black'>
+                                            <span id="labPrintQuality">0.0636g</span>
+                                        </span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr style='mso-yfti-irow: 5; text-align: left;'>
+                                <td style='width: 50%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <b><span style='font-size: 10.5pt; font-family: 微软雅黑; color: black;'>钻石质量<span lang="EN-US">
+                                            Carat Weight </span></span></b>
+                                    </p>
+                                </td>
+                                <td style='width: 55%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <span lang="EN-US" style='font-size: 10.5pt; font-family: 微软雅黑; color: black'>
+                                            <span id="labQualityThe">0.318ct</span>
+                                        </span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr style='mso-yfti-irow: 6; text-align: left;'>
+                                <td style='width: 50%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <b><span style='font-size: 10.5pt; font-family: 微软雅黑; color: black;'>形状<span lang="EN-US">
+                                            Shape </span></span></b>
+                                    </p>
+                                </td>
+                                <td style='width: 55%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <span lang="EN-US" style='font-size: 10.5pt; font-family: 微软雅黑; color: black'>
+                                            <span id="labShapeName">圆钻型</span>
+                                        </span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr style='mso-yfti-irow: 7; text-align: left;'>
+                                <td style='width: 50%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <b><span style='font-size: 10.5pt; font-family: 微软雅黑; color: black;'>颜色级别<span lang="EN-US">
+                                            <span class="SpellE">Colour</span> </span></span></b>
+                                    </p>
+                                </td>
+                                <td style='width: 55%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <span lang="EN-US" style='font-size: 10.5pt; font-family: 微软雅黑; color: black'>
+                                            <span id="labReferenceColorName">H</span>
+                                        </span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr style='mso-yfti-irow: 8; text-align: left;'>
+                                <td style='width: 50%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <b><span style='font-size: 10.5pt; font-family: 微软雅黑; color: black;'>净度级别<span lang="EN-US">
+                                            Clarity </span></span></b>
+                                    </p>
+                                </td>
+                                <td style='width: 55%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <span lang="EN-US" style='font-size: 10.5pt; font-family: 微软雅黑; color: black'>
+                                            <span id="labReferenceCleanName">VVS</span>
+                                        </span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr style='mso-yfti-irow: 8; text-align: left;'>
+                                <td style='width: 50%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <b><span style='font-size: 10.5pt; font-family: 微软雅黑; color: black;'>切工<span lang="EN-US">
+                                            Cut </span></span></b>
+                                    </p>
+                                </td>
+                                <td style='width: 55%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <span lang="EN-US" style='font-size: 10.5pt; font-family: 微软雅黑; color: black'>
+                                            <span id="labCutGrading">---</span>
+                                        </span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr style='mso-yfti-irow: 8; text-align: left;'>
+                                <td style='width: 50%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <b><span style='font-size: 10.5pt; font-family: 微软雅黑; color: black;'>镶嵌材料<span lang="EN-US">
+                                            Material </span></span></b>
+                                    </p>
+                                </td>
+                                <td style='width: 55%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <span lang="EN-US" style='font-size: 10.5pt; font-family: 微软雅黑; color: black'>
+                                            <span id="labInlayMaterialName">---</span>
+                                        </span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr style='mso-yfti-irow: 8; text-align: left;'>
+                                <td style='width: 50%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <b><span style='font-size: 10.5pt; font-family: 微软雅黑; color: black;'>备注<span lang="EN-US">
+                                            Remarks </span></span></b>
+                                    </p>
+                                </td>
+                                <td style='width: 55%; padding-left: 10px;'>
+                                    <p class="MsoNormal">
+                                        <span lang="EN-US" style='font-size: 10.5pt; font-family: 微软雅黑; color: black'>
+                                            <span id="labRemark">尺寸:4.46-4.43×2.67mm八箭八心</span>
+                                        </span>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p align="center">
+                        <span lang="EN-US" style='font-size: 10.5pt; font-family: 微软雅黑; color: black'></span>
+                    </p>
+                </td>
+            </tr>
+            <tr style='mso-yfti-irow: 2; mso-yfti-lastrow: yes'>
+                <td style='border-bottom: #99BBE8 0px solid;'>
+                    <div style='margin-top: 6.0pt; margin-bottom: 6.0pt; display: none;'>
+                        <p class="MsoNormal" align="center" style='text-align: center'>
+                            <span lang="EN-US" style='font-size: 9.0pt; font-family: 微软雅黑; color: black'><a href="javascript:window.close();">
+                                <span lang="EN-US" style='font-size: 10.5pt; color: #666666'><span lang="EN-US">关闭窗口<br />
+                                    Close</span></span></a></span></p>
+                    </div>
+                    <div style='margin-top: 6.0pt; margin-bottom: 6.0pt'>
+                        <p style='line-height: 15.0pt; text-align: center;'>
+                            <span style='font-size: 9.0pt; font-family: 微软雅黑; color: black'>广东省金银珠宝检测中心是经人民银行批准，<br />
+                                并经广东省质量技术监督局授权的省一级首饰检测机构。<span lang="EN-US"><br />
+                                    <br />
+                                    广东省金银珠宝检测中心
+                                    <br />
+                                    广东省质量监督金银珠宝检验站
+                                    <br />
+                                </span>总部地址：广州市农林下路<span lang="EN-US">81</span>号之<span lang="EN-US">3 ( </span>邮政编码：<span
+                                    lang="EN-US">510080 )<br />
+                                </span>联系电话：<span lang="EN-US">(020) 87301500<span style='mso-spacerun: yes'></span></span>培训中心电话：（<span
+                                    lang="EN-US">020</span>）<span lang="EN-US">87303023 </span>
+                                <br />
+                                图文传真：<span lang="EN-US">(020) 87303090 </span></span>
+                        </p>
+                    </div>
+                    <div style='margin-top: 6.0pt; margin-bottom: 6.0pt'>
+                        <p class="MsoNormal" style="text-align: center;">
+                            <b style='mso-bidi-font-weight: normal'><span style='font-size: 9.0pt; font-family: 微软雅黑'>
+                                更多精彩内容在我中心官方网站：<span class="SpellE"><span lang="EN-US">www.gdtc.cc</span></span><span
+                                    lang="EN-US"></span></span></b></p>
+                        <p class="MsoNormal" style="text-align: center;">
+                            <b style='mso-bidi-font-weight: normal'><span style='font-size: 9.0pt; font-family: 微软雅黑'>
+                                证书查询热线：<span lang="EN-US">020-87303023</span></span></b><span lang="EN-US" style='font-size: 9.0pt;
+                                    font-family: 微软雅黑; color: black'></span></p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

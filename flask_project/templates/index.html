@@ -3,11 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .set{width: 50px; height: 30px; font-size: 10px; -webkit-appearance:button;}
+
+    </style>
 </head>
 <body>
     <p>这是首页页面</p>
     <p>用户名：{{ username }}</p>
     <p>性别：{{ gender }}</p>
     <p>年龄：{{ age }}</p>
+
+    {% from 'macro.html' import pagination_form_show  %}
+    {#  导入分页form  #}
+    {{ pagination_form_show(current_page, max_page, 'index') }}
+
+{#    {% if current_page | int <= 1 %}#}
+{#        {% set last_page = 1 %}#}
+{#    {% else %}#}
+{#        {% set last_page = current_page | int - 1 %}#}
+{#    {% endif %}#}
+{##}
+{#    {% if current_page | int >= max_page | int %}#}
+{#        {% set next_page = max_page %}#}
+{#    {% else %}#}
+{#        {% set next_page = current_page | int + 1 %}#}
+{#    {% endif %}#}
+{#    <form action="" method="post" name="from_page">#}
+{#        <input type="button" onclick="window.location.href = ('{{ url_for('index', page=last_page) }}')"#}
+{#               value="上一页"#}
+{#               class="set">#}
+{#        <a>&ensp;&ensp;第&ensp;&ensp;{{ current_page }}&ensp;&ensp;页&ensp;&ensp;</a>#}
+{#        <input type="button" onclick="window.location.href = ('{{ url_for('index', page=next_page)}}')"#}
+{#               value="下一页"#}
+{#               class="set">#}
+{#            &ensp;&ensp;第#}
+{#        <input type="text"#}
+{#               name="page"#}
+{#               onkeyup="value=value.replace(/\D/g,'')"#}
+{#               onafterpaste="value=value.replace(/\D/g,'')"#}
+{#               maxlength="{{ max_page | string | length }}"#}
+{#               style="width: 50px; text-align: center"#}
+{#               required="required"#}
+{#               placeholder="共{{ max_page }}页">#}
+{#        &ensp;&ensp;页&ensp;&ensp;#}
+{#        <input type="submit" value="跳转" class="set">#}
+{#    </form>#}
+
 </body>
 </html>

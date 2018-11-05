@@ -1,13 +1,15 @@
 #encoding:utf-8
 import sys
+import math
 import copy
 import collections
-from flask import Flask, render_template, url_for, redirect, request, flash, session as se
+from flask import Flask, render_template, url_for, redirect, request, flash
 from model.crawler import DectectionInfo, FieldsInfoMapper, DBSession
 from login_manager import LoginManager
 from register_manager import RegisterManager
 from password_modify_manager import PasswordModifyManager as PMM
 from config import Config
+from sqlalchemy import func
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -56,7 +58,7 @@ def data_from_detection_info(detection_number=None,query_code=None):
 
 
     # 得到显示项目列表
-    fields_mapper_infos = session.query(FieldsInfoMapper).filter(FieldsInfoMapper.source_url ==
+    fields_mapper_infos = session.query(FieldsInfoMapper).filter.(FieldsInfoMapper.source_url ==
                                                                  dectectioninfo.source_url).all()
 
     record = collections.OrderedDict()
@@ -72,15 +74,25 @@ def data_from_detection_info(detection_number=None,query_code=None):
     session.close()
 
 @app.route('/query')
-def detection_info_show():
+@app.route('/query/<int:page>', methods=['GET', 'POST'])
+def detection_info_show(page=1):
+    # # 得到检测项目信息表
+    # records = data_from_crawler('detection_information')
+    # 创建session对象
+    session = DBSession()
+    # 检索的总行数
+    rows_count = session.query(DectectionInfo).with_entities(func.count(DectectionInfo.id)).scalar()
+    session.query().filter_by()
 
-    # 得到检测项目信息表
-    records = data_from_crawler('detection_information')
+    # 当前页
+    current_page = page
+    # 最大页号
+    max_page = math.ceil(rows_count / config.PAGE_ROWS_COUNT)
 
-    for record in records:
-        print record
+    #
 
     datas = {'records': records, 'detection_number': '', 'query_code': ''}
+
     return render_template('index.html', **datas)
 
 # 详情页面
@@ -225,4 +237,31 @@ def do_change_password(user_code=' ',
 
 
 if __name__ == '__main__':
+
+    # # 创建session对象
+    # session = DBSession()
+    #
+    # dectectionInfos = session.query(DectectionInfo).filter(DectectionInfo.id < 100)
+    #
+    # print dectectionInfos.with_entities(func.count(DectectionInfo.id)).scalar()
+
+
+
+
+
+    # records = []
+    # record = {}
+    # for dectectionInfo in dectectionInfos:
+    #     #
+    #     record.update(dectectionInfo.__dict__)
+    #
+    #     record.pop('_sa_instance_state')
+    #
+    #     records.append(copy.deepcopy(record))
+
+    # # 关闭session:
+    # session.close()
+
+    # return records
+
     app.run(debug=True)
