@@ -11,6 +11,7 @@ from view import route
 from  config import Config
 import requests
 from requests.exceptions import RequestException
+from core.constant import Constant
 
 
 @route('/websocket/send')
@@ -23,16 +24,18 @@ class NoticeHandler(web.RequestHandler):
     def post(self):
 
         data = json.loads(self.request.body)
+        print(data)
 
         # 查看是哪个项目的websocket
         msg_cls = MsgWebSocket
 
-        send_from = data.pop('send_from', None)
+        send_to = data.pop('send_to', None)
 
-        # 商城
-        if send_from == 'mall':
+        # 商城消息
+        if send_to == Constant.TO_MALL:
             socket_map = msg_cls.member_socket_map
-        elif send_from == 'manager':
+        # 运营人员消息
+        elif send_to == Constant.TO_MANAGER:
             socket_map = msg_cls.operator_socket_map
         else:
             self.finish('请求参数/格式错误')
@@ -86,7 +89,7 @@ class MsgWebSocket(websocket.WebSocketHandler):
             self.write_message('请求参数/格式错误')
 
         # 用户校验
-        if event == 'register':
+        if event == Constant.EVENT_REGISTER:
             params = {'user_id': user_id,
                       'token': token}
 
